@@ -36,6 +36,12 @@ const UserType = new GraphQLObjectType({
             resolve: (parentValue, args) =>
                 axios.get(`http://localhost:3000/companies/${parentValue.companyId}`)
                     .then(({data}) => data)
+        },
+        friends: {
+            type: new GraphQLList(UserType),
+            resolve: (parentValue, args) => parentValue.friends.map(id =>
+                axios.get(`http://localhost:3000/users/${id}`).then(r => r.data)
+            )
         }
     })
 });

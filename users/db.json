@@ -1,19 +1,20 @@
 {
   "users": [
     {
-      "id": "40",
+      "id": "0",
       "firstName": "Alex",
       "age": 40,
-      "companyId": "2"
+      "companyId": "2",
+      "friends": ["1", "2", "3"]
     },
     {
-      "id": "47",
+      "id": "1",
       "firstName": "Samantha",
       "age": 21,
-      "companyId": "2"
+      "companyId": "1"
     },
     {
-      "id": "41",
+      "id": "2",
       "firstName": "Nick",
       "age": 33,
       "companyId": "2"
@@ -21,8 +22,8 @@
     {
       "firstName": "Stephen",
       "age": 26,
-      "id": "ryoVKSCyZ",
-      "companyId": "1"
+      "id": "3",
+      "companyId": "3"
     }
   ],
   "companies": [
@@ -35,6 +36,11 @@
       "id": "2",
       "name": "Google",
       "description": "Search"
+    },
+    {
+      "id": "3",
+      "name": "Microsoft",
+      "description": "Windows"
     }
   ]
 }
